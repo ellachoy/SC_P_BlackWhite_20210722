@@ -1,0 +1,166 @@
+@font-face {
+  font-family: maison;
+  src: url("../fonts/maison-neue-mono.woff2");
+  font-family: rz;
+  src: url("../fonts/rz-regular.woff2");
+}
+
+body {
+  margin: 0;
+}
+
+/* general effect */
+* {
+  font-family: rz;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid lightgrey;
+  /* padding: 8px 12px; */
+}
+.navbar_logo {
+  padding-left: 10%;
+}
+.navbar_menu {
+  display: flex;
+  list-style: none;
+  width: 40%;
+  justify-content: space-around;
+}
+.navbar_menu li a {
+  padding: 8px 12px;
+}
+
+header h1 {
+  font-size: 6em;
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 70;
+  position: absolute;
+  left: 14%;
+  top: 10%;
+}
+/* header h1:hover {
+  background-color: rgb(190, 213, 171);
+} */
+header span:not(#pho) {
+  color: white;
+  font-weight: lighter;
+  text-shadow: -3px -3px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+header h1 #pho {
+  color: white;
+  font-weight: 100;
+}
+header figure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+header figure img:first-child {
+  order: 0;
+  width: 25%;
+  margin: 5% 0 5% 0;
+}
+header figure img:nth-child(2) {
+  order: 1;
+  width: 18%;
+  margin-top: 15%;
+}
+header figure img:last-child {
+  order: 2;
+  width: 27%;
+  margin-top: 15%;
+}
+article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10% 17%;
+  margin-bottom: 10vh;
+}
+article .skills {
+  width: 20%;
+}
+article .skills h4 {
+  font-size: 28px;
+}
+article .MV {
+  width: 65%;
+}
+.skills h4 span:hover {
+  text-decoration: underline;
+}
+.proj {
+  /* background-color: beige; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.proj figure {
+  display: inline-flex;
+  margin: 0 0 20vh;
+}
+.proj figure:nth-child(even) {
+  justify-content: flex-end;
+}
+.proj figcaption {
+  margin-right: 10%;
+}
+.proj figcaption:nth-child(even) {
+  margin-left: 10%;
+}
+.proj img {
+  width: 35em;
+  height: 30vh;
+}
+.proj p {
+  font-size: 12px;
+  margin-bottom: 15vh;
+}
+.proj h6 {
+  text-align: end;
+}
+.proj h3 {
+  font-size: 35px;
+  margin-top: 0;
+  letter-spacing: 3px;
+}
+.proj h3:hover {
+  text-decoration: underline;
+}
+footer div {
+  background-color: black;
+  min-height: 50vh;
+  color: white;
+  padding: 7% 0 0 10%;
+}
+footer div h1 {
+  width: 60%;
+  font-size: 7em;
+}
+button {
+  border: 2px solid white;
+  width: 15%;
+  height: 4vh;
+  background-color: black;
+  color: white;
+}
+button:hover {
+  box-shadow: 5px 5px;
+}
+footer p {
+  text-align: center;
+  font-size: 13px;
+  padding: 10px;
+}
